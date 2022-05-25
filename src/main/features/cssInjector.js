@@ -16,7 +16,7 @@ webContents.on("dom-ready", () => {
   `);
 
 
-  const animationsDisabled = global.store.get('animations_disabled', true);
+  const animationsDisabled = global.store.get('animations_disabled', false);
   // music visualizer animation
   if (animationsDisabled) {
     webContents.insertCSS(`
