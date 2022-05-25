@@ -14,7 +14,12 @@ webContents.on("dom-ready", () => {
       display: none !important;
     }
   `);
-
+  
+  webContents.insertCSS(`
+  .progress__progress .progress__line {
+    background: #7504CD;
+    }
+  `);
 
   const animationsDisabled = global.store.get('animations_disabled', false);
   // music visualizer animation
