@@ -17,7 +17,7 @@ webContents.on("dom-ready", () => {
   
   webContents.insertCSS(`
   .progress__progress .progress__line {
-    background: #7504CD;
+    background-color: #7504CD !important;
     }
   `);
 
